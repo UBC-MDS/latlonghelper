@@ -17,4 +17,9 @@ def LatLongDistance(latitude_1: float, longitude_1: float, latitude_2: float, lo
     -------
     distance : float
         Distance between the two points (in kilometers)
+    
+    Example
+    -------
+    >>> LatLongDistance(40.7128, -74.0060, 34.0522, -118.2437)
+    3935.75
     """
