@@ -11,9 +11,19 @@ Functions included:
 
 ## Installation
 
+### Prerequisites
+- Python 3.9+
+- `pip`
+
+### Install from source (recommended)
+
+Clone the repository and install the package in editable mode:
+
 ```bash
-$ pip install latlonghelper
+git clone https://github.com/UBC-MDS/latlonghelper
+pip install -e .
 ```
+
 ## To run the tests
 
 You can run the tests for this package using `pytest`. First, install the testing dependencies:
