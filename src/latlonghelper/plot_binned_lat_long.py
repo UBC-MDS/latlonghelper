@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import pandas as pd
 
-def PlotBinnedLatLong(binned_data):
+def PlotBinnedLatLong(binned_data, width=10, height=6):
     """
     Visualizes binned geographic coordinates on a heatmap.
 
@@ -10,6 +10,10 @@ def PlotBinnedLatLong(binned_data):
     ----------
     binned_data : String
         Output of LatLongBinning
+    width: int
+        width of figure
+    height: int
+        height of figure
 
     Returns
     -------
@@ -36,7 +40,7 @@ def PlotBinnedLatLong(binned_data):
     
     heatmap_data = heatmap_data.sort_index(ascending=False)
 
-    plt.figure(figsize=(10, 6))
+    plt.figure(figsize=(width, height))
     ax = sns.heatmap(heatmap_data, cmap="YlGnBu", cbar_kws={'label': 'Frequency'})
     
     plt.title("Geographic Bin Density Heatmap")

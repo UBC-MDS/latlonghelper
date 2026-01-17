@@ -5,6 +5,33 @@ from latlonghelper.plot_binned_lat_long import PlotBinnedLatLong
 
 class TestPlotBinnedLatLong(unittest.TestCase):
 
+    def test_figure_dimensions(self):
+        """Verify that the width and height parameters correctly set the figure size."""
+        custom_width = 15
+        custom_height = 8
+        data = ["49.25_-123.25"]
+        
+        ax = PlotBinnedLatLong(data, width=custom_width, height=custom_height)
+        fig = ax.get_figure()
+        
+        actual_width, actual_height = fig.get_size_inches()
+        
+        self.assertEqual(actual_width, custom_width)
+        self.assertEqual(actual_height, custom_height)
+        plt.close(fig)
+
+    def test_default_dimensions(self):
+        """Verify that the default values (10, 6) are used when not specified."""
+        data = ["49.25_-123.25"]
+        ax = PlotBinnedLatLong(data)
+        fig = ax.get_figure()
+        
+        actual_width, actual_height = fig.get_size_inches()
+        
+        self.assertEqual(actual_width, 10)
+        self.assertEqual(actual_height, 6)
+        plt.close(fig)
+
     def test_return_type(self):
         """Check if the function returns a Matplotlib Axes object."""
         data = ["49.25_-123.25", "49.26_-123.26"]
