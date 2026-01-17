@@ -30,17 +30,12 @@ def PlotBinnedLatLong(binned_data):
         latitudes.append(float(lat_str))
         longitudes.append(float(lon_str))
     
-    # 2. Create a DataFrame for easy plotting
     df = pd.DataFrame({'lat': latitudes, 'lon': longitudes})
     
-    # 3. Pivot the data to create a density matrix
-    # We count occurrences of each lat/long pair
     heatmap_data = df.groupby(['lat', 'lon']).size().unstack(fill_value=0)
     
-    # Sort index so latitude increases upwards on the Y-axis
     heatmap_data = heatmap_data.sort_index(ascending=False)
 
-    # 4. Plotting
     plt.figure(figsize=(10, 6))
     ax = sns.heatmap(heatmap_data, cmap="YlGnBu", cbar_kws={'label': 'Frequency'})
     
