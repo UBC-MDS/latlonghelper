@@ -1,0 +1,24 @@
+---
+title: Home
+---
+
+# LatLongHelper
+
+LatLongHelper is a Python package that provides helper functions for working with latitude and longitude data.
+
+It is designed to make common geospatial tasks easier for users with minimal Python experience.
+
+## Installation
+
+```bash
+pip install latlonghelper
+```
+
+## Quick Start
+
+```python
+import latlonghelper
+```
+
+# Explore available helper functions
+help(latlonghelper)
