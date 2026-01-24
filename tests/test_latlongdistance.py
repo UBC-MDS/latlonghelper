@@ -46,3 +46,24 @@ def test_latlongdistance_out_of_range(lat1, lon1, lat2, lon2):
 def test_latlongdistance_type_errors(lat1, lon1, lat2, lon2):
     with pytest.raises(TypeError):
         LatLongDistance(lat1, lon1, lat2, lon2)
+
+# -----------------------------
+# Mathematical properties
+# -----------------------------
+def test_latlongdistance_is_symmetric():
+    lat1, lon1 = 40.7128, -74.0060
+    lat2, lon2 = 34.0522, -118.2437
+
+    d1 = LatLongDistance(lat1, lon1, lat2, lon2)
+    d2 = LatLongDistance(lat2, lon2, lat1, lon1)
+
+    assert round(d1, 6) == round(d2, 6)
+
+
+# -----------------------------
+# Extreme valid inputs
+# -----------------------------
+def test_latlongdistance_north_to_south_pole():
+    result = LatLongDistance(90, 0, -90, 0)
+    assert round(result, 2) == 20015.09
+
