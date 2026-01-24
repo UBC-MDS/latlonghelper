@@ -1,3 +1,6 @@
 project:
-  type: python
-  packages: [latlonghelper]
+  type: website
+  title: "LatLongHelper Documentation"
+  output-dir: _site
+
+

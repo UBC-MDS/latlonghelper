@@ -1,0 +1,58 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Home",
+    "section": "",
+    "text": "LatLongHelper is a Python package that provides helper functions for working with latitude and longitude data.\nIt is designed to make common geospatial tasks easier for users with minimal Python experience.\n\n\npip install latlonghelper\n\n\n\nimport latlonghelper"
+  },
+  {
+    "objectID": "index.html#installation",
+    "href": "index.html#installation",
+    "title": "Home",
+    "section": "",
+    "text": "pip install latlonghelper"
+  },
+  {
+    "objectID": "index.html#quick-start",
+    "href": "index.html#quick-start",
+    "title": "Home",
+    "section": "",
+    "text": "import latlonghelper"
+  },
+  {
+    "objectID": "examples.html",
+    "href": "examples.html",
+    "title": "Examples",
+    "section": "",
+    "text": "This page shows simple demonstrations of how to use the main functions/classes in latlonghelper.\n\n\n\nfrom latlonghelper.lat_long_distance import LatLongDistance\n\nlatitude_1, longitude_1 = 40.7128, -74.0060  # New York\nlatitude_2, longitude_2 = 34.0522, -118.2437 # Los Angeles\n\ndistance = LatLongDistance(latitude_1, longitude_1, latitude_2, longitude_2)\nprint(\"Distance (km):\", distance)\n\n\n\n\nfrom latlonghelper.lat_long_binning import LatLongBinning\n\nlatitude, longitude = 49.2593, -123.2475\n\nbinned_cell = LatLongBinning(latitude, longitude)\nprint(\"Binned cell:\", binned_cell)\n\n\n\n\nfrom latlonghelper.plot_binned_lat_long import PlotBinnedLatLong\nimport matplotlib.pyplot as plt\n\nbinned_data = ['49.25_-123.25', '49.25_-123.25', '49.26_-123.24', '49.25_-123.25']\n\nax = PlotBinnedLatLong(binned_data)\n\nplt.show()"
+  },
+  {
+    "objectID": "examples.html#latlongdistance",
+    "href": "examples.html#latlongdistance",
+    "title": "Examples",
+    "section": "",
+    "text": "from latlonghelper.lat_long_distance import LatLongDistance\n\nlatitude_1, longitude_1 = 40.7128, -74.0060  # New York\nlatitude_2, longitude_2 = 34.0522, -118.2437 # Los Angeles\n\ndistance = LatLongDistance(latitude_1, longitude_1, latitude_2, longitude_2)\nprint(\"Distance (km):\", distance)"
+  },
+  {
+    "objectID": "examples.html#latlongbinning",
+    "href": "examples.html#latlongbinning",
+    "title": "Examples",
+    "section": "",
+    "text": "from latlonghelper.lat_long_binning import LatLongBinning\n\nlatitude, longitude = 49.2593, -123.2475\n\nbinned_cell = LatLongBinning(latitude, longitude)\nprint(\"Binned cell:\", binned_cell)"
+  },
+  {
+    "objectID": "examples.html#plotbinnedlatlong",
+    "href": "examples.html#plotbinnedlatlong",
+    "title": "Examples",
+    "section": "",
+    "text": "from latlonghelper.plot_binned_lat_long import PlotBinnedLatLong\nimport matplotlib.pyplot as plt\n\nbinned_data = ['49.25_-123.25', '49.25_-123.25', '49.26_-123.24', '49.25_-123.25']\n\nax = PlotBinnedLatLong(binned_data)\n\nplt.show()"
+  },
+  {
+    "objectID": "reference.html",
+    "href": "reference.html",
+    "title": "API Reference",
+    "section": "",
+    "text": "Import all classes/functions to show docstrings\nfrom latlonghelper.lat_long_distance import LatLongDistance from latlonghelper.lat_long_binning import LatLongBinning from latlonghelper.plot_binned_lat_long import PlotBinnedLatLong\nhelp(LatLongDistance) help(LatLongBinning) help(PlotBinnedLatLong)"
+  }
+]

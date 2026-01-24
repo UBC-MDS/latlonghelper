@@ -1,16 +1,13 @@
 ---
-title: API Reference
+title: "API Reference"
 ---
 
-# API Reference
+```{python}
+# Import all classes/functions to show docstrings
+from latlonghelper.lat_long_distance import LatLongDistance
+from latlonghelper.lat_long_binning import LatLongBinning
+from latlonghelper.plot_binned_lat_long import PlotBinnedLatLong
 
-This page documents all public functions and classes in the `latlonghelper` package.
-
-```{quartodoc}
-package: latlonghelper
-sections:
-  - title: Modules
-    contents:
-      - latlonghelper.lat_long_distance.LatLongDistance
-      - latlonghelper.lat_long_binning.LatLongBinning
-      - latlonghelper.plot_binned_lat_long.PlotBinnedLatLong
+help(LatLongDistance)
+help(LatLongBinning)
+help(PlotBinnedLatLong)
