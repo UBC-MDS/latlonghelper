@@ -1,0 +1,49 @@
+---
+title: Examples
+---
+
+# Examples
+
+This page shows simple demonstrations of how to use the main functions/classes in `latlonghelper`.
+
+---
+
+## LatLongDistance
+
+```python
+from latlonghelper.lat_long_distance import LatLongDistance
+
+latitude_1, longitude_1 = 40.7128, -74.0060  # New York
+latitude_2, longitude_2 = 34.0522, -118.2437 # Los Angeles
+
+distance = LatLongDistance(latitude_1, longitude_1, latitude_2, longitude_2)
+print("Distance (km):", distance)
+```
+
+---
+
+## LatLongBinning
+
+```python
+from latlonghelper.lat_long_binning import LatLongBinning
+
+latitude, longitude = 49.2593, -123.2475
+
+binned_cell = LatLongBinning(latitude, longitude)
+print("Binned cell:", binned_cell)
+```
+
+---
+
+## PlotBinnedLatLong
+
+```python
+from latlonghelper.plot_binned_lat_long import PlotBinnedLatLong
+import matplotlib.pyplot as plt
+
+binned_data = ['49.25_-123.25', '49.25_-123.25', '49.26_-123.24', '49.25_-123.25']
+
+ax = PlotBinnedLatLong(binned_data)
+
+plt.show()
+```
