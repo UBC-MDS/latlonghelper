@@ -26,8 +26,8 @@ def PlotBinnedLatLong(binned_data, width=10, height=6):
     matplotlib.axes.Axes
         Returns the plot object for display.
 
-    Example
-    -------
+    Examples
+    --------
     >>> fig = PlotBinnedLatLong(binned_data)
     >>> plt.show()
     """

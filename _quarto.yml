@@ -38,6 +38,7 @@ quartodoc:
   style: pkgdown
   dir: reference
   package: latlonghelper
+  parser: numpy
 
   options:
     show_module: false

@@ -37,7 +37,12 @@ and longitude, rather than assuming a flat surface.
 |----------|--------|-------------------------------------------------|
 | distance | float  | Distance between the two points (in kilometers) |
 
-## Example {.doc-section .doc-section-example}
+## Raises {.doc-section .doc-section-raises}
 
+- **ValueError**: If any latitude is outside [-90, 90] or any longitude is outside [-180, 180].
+
+## Example {.doc-section .doc-section-example}
+```python
 >>> LatLongDistance(40.7128, -74.0060, 34.0522, -118.2437)
 3935.75
+```

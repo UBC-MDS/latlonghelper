@@ -4,7 +4,7 @@
     "href": "reference/plot_binned_lat_long.PlotBinnedLatLong.html",
     "title": "PlotBinnedLatLong",
     "section": "",
-    "text": "plot_binned_lat_long.PlotBinnedLatLong(binned_data, width=10, height=6)\nVisualizes binned geographic coordinates on a heatmap.\nThis function takes the output of LatLongBinning and visualizes the spatial density of points using a heatmap, where each cell represents a latitude– longitude bin and the color intensity indicates the number of observations in that bin.\n\n\n\n\n\n\n\n\n\n\n\nName\nType\nDescription\nDefault\n\n\n\n\nbinned_data\niterable of str\nBinned geographic coordinates formatted as “”, for example ”49.25-123.25”. Each element represents one observation.\nrequired\n\n\nwidth\nint\nWidth of the figure in inches (default is 10).\n10\n\n\nheight\nint\nHeight of the figure in inches (default is 6).\n6\n\n\n\n\n\n\n\n\n\nName\nType\nDescription\n\n\n\n\n\nmatplotlib.axes.Axes\nReturns the plot object for display.\n\n\n\n\n\n\n\n\n\nfig = PlotBinnedLatLong(binned_data) plt.show()",
+    "text": "plot_binned_lat_long.PlotBinnedLatLong(binned_data, width=10, height=6)\nVisualizes binned geographic coordinates on a heatmap.\nThis function takes the output of LatLongBinning and visualizes the spatial density of points using a heatmap, where each cell represents a latitude– longitude bin and the color intensity indicates the number of observations in that bin.\n\n\n\n\n\n\n\n\n\n\n\nName\nType\nDescription\nDefault\n\n\n\n\nbinned_data\niterable of str\nBinned geographic coordinates formatted as “”, for example ”49.25-123.25”. Each element represents one observation.\nrequired\n\n\nwidth\nint\nWidth of the figure in inches (default is 10).\n10\n\n\nheight\nint\nHeight of the figure in inches (default is 6).\n6\n\n\n\n\n\n\n\n\n\nName\nType\nDescription\n\n\n\n\n\nmatplotlib.axes.Axes\nReturns the plot object for display.\n\n\n\n\n\n\n&gt;&gt;&gt; fig = PlotBinnedLatLong(binned_data)\n&gt;&gt;&gt; plt.show()",
     "crumbs": [
       "Reference",
       "Available Functions",
@@ -40,7 +40,7 @@
     "href": "reference/plot_binned_lat_long.PlotBinnedLatLong.html#example",
     "title": "PlotBinnedLatLong",
     "section": "",
-    "text": "fig = PlotBinnedLatLong(binned_data) plt.show()",
+    "text": "&gt;&gt;&gt; fig = PlotBinnedLatLong(binned_data)\n&gt;&gt;&gt; plt.show()",
     "crumbs": [
       "Reference",
       "Available Functions",
@@ -269,7 +269,7 @@
     "href": "reference/lat_long_binning.LatLongBinning.html",
     "title": "LatLongBinning",
     "section": "",
-    "text": "lat_long_binning.LatLongBinning(\n    latitude,\n    longitude,\n    grid_size_latitude=0.01,\n    grid_size_longitude=0.01,\n)\nA function that is used to bin latitude and longitude into different groups\n\n\n\n\n\n\n\n\n\n\n\nName\nType\nDescription\nDefault\n\n\n\n\nlatitude\nfloat\nLatitude in degrees (-90 to 90)\nrequired\n\n\nlongitude\nfloat\nLongitude in degrees (-180 to 180)\nrequired\n\n\ngrid_size_latitude\nfloat\nGrid size of latitude in degrees\n0.01\n\n\ngrid_size_longitude\nfloat\nGrid size of longitude in degrees\n0.01\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nName\nType\nDescription\n\n\n\n\n\nstr\nIdentifier of the binned latitude–longitude grid cell\n\n\n\n\n\n\n\n\n\nLatLongBinning(49.2593, -123.2475) ‘49.25_-123.25’",
+    "text": "lat_long_binning.LatLongBinning(\n    latitude,\n    longitude,\n    grid_size_latitude=0.01,\n    grid_size_longitude=0.01,\n)\nA function that is used to bin latitude and longitude into different groups\n\n\n\n\n\n\n\n\n\n\n\nName\nType\nDescription\nDefault\n\n\n\n\nlatitude\nfloat\nLatitude in degrees (-90 to 90)\nrequired\n\n\nlongitude\nfloat\nLongitude in degrees (-180 to 180)\nrequired\n\n\ngrid_size_latitude\nfloat\nGrid size of latitude in degrees\n0.01\n\n\ngrid_size_longitude\nfloat\nGrid size of longitude in degrees\n0.01\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nName\nType\nDescription\n\n\n\n\n\nstr\nIdentifier of the binned latitude–longitude grid cell\n\n\n\n\n\n\n\nTypeError: If latitude, longitude, grid_size_latitude, or grid_size_longitude are not numeric.\nValueError: If latitude is outside [-90, 90], longitude is outside [-180, 180], or if either grid size is less than or equal to 0.\n\n\n\n\n&gt;&gt;&gt; LatLongBinning(49.2593, -123.2475)\n'49.25_-123.25'",
     "crumbs": [
       "Reference",
       "Available Functions",
@@ -301,11 +301,23 @@
     ]
   },
   {
+    "objectID": "reference/lat_long_binning.LatLongBinning.html#raises",
+    "href": "reference/lat_long_binning.LatLongBinning.html#raises",
+    "title": "LatLongBinning",
+    "section": "",
+    "text": "TypeError: If latitude, longitude, grid_size_latitude, or grid_size_longitude are not numeric.\nValueError: If latitude is outside [-90, 90], longitude is outside [-180, 180], or if either grid size is less than or equal to 0.",
+    "crumbs": [
+      "Reference",
+      "Available Functions",
+      "LatLongBinning"
+    ]
+  },
+  {
     "objectID": "reference/lat_long_binning.LatLongBinning.html#example",
     "href": "reference/lat_long_binning.LatLongBinning.html#example",
     "title": "LatLongBinning",
     "section": "",
-    "text": "LatLongBinning(49.2593, -123.2475) ‘49.25_-123.25’",
+    "text": "&gt;&gt;&gt; LatLongBinning(49.2593, -123.2475)\n'49.25_-123.25'",
     "crumbs": [
       "Reference",
       "Available Functions",
@@ -317,7 +329,7 @@
     "href": "reference/lat_long_distance.LatLongDistance.html",
     "title": "LatLongDistance",
     "section": "",
-    "text": "lat_long_distance.LatLongDistance(\n    latitude_1,\n    longitude_1,\n    latitude_2,\n    longitude_2,\n)\nA function that calculates the distance between two geographic points given their latitude and longitude coordinates.\nAddendum: The use of the Haversine formula for distance calculation was suggested by ChatGPT. The Haversine formula was chosen because it accounts for the curvature of the Earth, providing an accurate “great-circle” distance between two points given their latitude and longitude, rather than assuming a flat surface.\n\n\n\n\n\n\n\n\n\n\n\nName\nType\nDescription\nDefault\n\n\n\n\nlatitude_1\nfloat\nLatitude of the first point in degrees (-90 to 90)\nrequired\n\n\nlongitude_1\nfloat\nLongitude of the first point in degrees (-180 to 180)\nrequired\n\n\nlatitude_2\nfloat\nLatitude of the second point in degrees (-90 to 90)\nrequired\n\n\nlongitude_2\nfloat\nLongitude of the second point in degrees (-180 to 180)\nrequired\n\n\n\n\n\n\n\n\n\nName\nType\nDescription\n\n\n\n\ndistance\nfloat\nDistance between the two points (in kilometers)\n\n\n\n\n\n\n\n\n\nLatLongDistance(40.7128, -74.0060, 34.0522, -118.2437) 3935.75",
+    "text": "lat_long_distance.LatLongDistance(\n    latitude_1,\n    longitude_1,\n    latitude_2,\n    longitude_2,\n)\nA function that calculates the distance between two geographic points given their latitude and longitude coordinates.\nAddendum: The use of the Haversine formula for distance calculation was suggested by ChatGPT. The Haversine formula was chosen because it accounts for the curvature of the Earth, providing an accurate “great-circle” distance between two points given their latitude and longitude, rather than assuming a flat surface.\n\n\n\n\n\n\n\n\n\n\n\nName\nType\nDescription\nDefault\n\n\n\n\nlatitude_1\nfloat\nLatitude of the first point in degrees (-90 to 90)\nrequired\n\n\nlongitude_1\nfloat\nLongitude of the first point in degrees (-180 to 180)\nrequired\n\n\nlatitude_2\nfloat\nLatitude of the second point in degrees (-90 to 90)\nrequired\n\n\nlongitude_2\nfloat\nLongitude of the second point in degrees (-180 to 180)\nrequired\n\n\n\n\n\n\n\n\n\nName\nType\nDescription\n\n\n\n\ndistance\nfloat\nDistance between the two points (in kilometers)\n\n\n\n\n\n\n\nValueError: If any latitude is outside [-90, 90] or any longitude is outside [-180, 180].\n\n\n\n\n&gt;&gt;&gt; LatLongDistance(40.7128, -74.0060, 34.0522, -118.2437)\n3935.75",
     "crumbs": [
       "Reference",
       "Available Functions",
@@ -349,11 +361,23 @@
     ]
   },
   {
+    "objectID": "reference/lat_long_distance.LatLongDistance.html#raises",
+    "href": "reference/lat_long_distance.LatLongDistance.html#raises",
+    "title": "LatLongDistance",
+    "section": "",
+    "text": "ValueError: If any latitude is outside [-90, 90] or any longitude is outside [-180, 180].",
+    "crumbs": [
+      "Reference",
+      "Available Functions",
+      "LatLongDistance"
+    ]
+  },
+  {
     "objectID": "reference/lat_long_distance.LatLongDistance.html#example",
     "href": "reference/lat_long_distance.LatLongDistance.html#example",
     "title": "LatLongDistance",
     "section": "",
-    "text": "LatLongDistance(40.7128, -74.0060, 34.0522, -118.2437) 3935.75",
+    "text": "&gt;&gt;&gt; LatLongDistance(40.7128, -74.0060, 34.0522, -118.2437)\n3935.75",
     "crumbs": [
       "Reference",
       "Available Functions",

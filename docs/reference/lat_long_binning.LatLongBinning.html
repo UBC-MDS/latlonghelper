@@ -210,6 +210,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <ul class="collapse">
   <li><a href="#parameters" id="toc-parameters" class="nav-link" data-scroll-target="#parameters">Parameters</a></li>
   <li><a href="#returns" id="toc-returns" class="nav-link" data-scroll-target="#returns">Returns</a></li>
+  <li><a href="#raises" id="toc-raises" class="nav-link" data-scroll-target="#raises">Raises</a></li>
   <li><a href="#example" id="toc-example" class="nav-link" data-scroll-target="#example">Example</a></li>
   </ul></li>
   </ul>
@@ -315,15 +316,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </tbody>
 </table>
 </section>
+<section id="raises" class="level2 doc-section doc-section-raises">
+<h2 class="doc-section doc-section-raises anchored" data-anchor-id="raises">Raises</h2>
+<ul>
+<li><strong>TypeError</strong>: If <code>latitude</code>, <code>longitude</code>, <code>grid_size_latitude</code>, or <code>grid_size_longitude</code> are not numeric.</li>
+<li><strong>ValueError</strong>: If <code>latitude</code> is outside [-90, 90], <code>longitude</code> is outside [-180, 180], or if either grid size is less than or equal to 0.</li>
+</ul>
+</section>
 <section id="example" class="level2 doc-section doc-section-example">
 <h2 class="doc-section doc-section-example anchored" data-anchor-id="example">Example</h2>
-<blockquote class="blockquote">
-<blockquote class="blockquote">
-<blockquote class="blockquote">
-<p>LatLongBinning(49.2593, -123.2475) ‘49.25_-123.25’</p>
-</blockquote>
-</blockquote>
-</blockquote>
+<div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> LatLongBinning(<span class="fl">49.2593</span>, <span class="op">-</span><span class="fl">123.2475</span>)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="co">'49.25_-123.25'</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 
 </section>

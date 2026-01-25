@@ -30,7 +30,15 @@ A function that is used to bin latitude and longitude into different groups
 |--------|--------|-------------------------------------------------------|
 |        | str    | Identifier of the binned latitude–longitude grid cell |
 
-## Example {.doc-section .doc-section-example}
+## Raises {.doc-section .doc-section-raises}
 
+- **TypeError**: If `latitude`, `longitude`, `grid_size_latitude`, or
+  `grid_size_longitude` are not numeric.
+- **ValueError**: If `latitude` is outside [-90, 90], `longitude` is
+  outside [-180, 180], or if either grid size is less than or equal to 0.
+
+## Example {.doc-section .doc-section-example}
+```python
 >>> LatLongBinning(49.2593, -123.2475)
 '49.25_-123.25'
+```

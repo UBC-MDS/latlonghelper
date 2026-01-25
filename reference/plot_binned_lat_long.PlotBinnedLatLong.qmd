@@ -30,6 +30,7 @@ in that bin.
 |        | matplotlib.axes.Axes | Returns the plot object for display. |
 
 ## Example {.doc-section .doc-section-example}
-
+```python
 >>> fig = PlotBinnedLatLong(binned_data)
 >>> plt.show()
+```
