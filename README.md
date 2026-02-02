@@ -1,9 +1,3 @@
----
-editor: 
-  markdown: 
-    wrap: 72
----
-
 # latlonghelper
 
 [![codecov](https://codecov.io/gh/UBC-MDS/latlonghelper/branch/main/graph/badge.svg?token=ZT9sK6gx1A)](https://codecov.io/gh/UBC-MDS/latlonghelper)
