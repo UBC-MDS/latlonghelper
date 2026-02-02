@@ -64,8 +64,6 @@ Ready to contribute? Here's how to set up `latlonghelper` for local development.
     $ pip install -e ".[dev]"
     ```
 
-    ```
-
 5. Use `git` (or similar) to create a branch for local development and make your changes:
 
     ```console
@@ -86,6 +84,7 @@ $ pytest
 To check test coverage:
 
 $ pytest --cov=src/latlonghelper
+```
 
 ## Pull Request Guidelines
 
