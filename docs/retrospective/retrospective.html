@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>index – LatLongHelper Documentation</title>
+<title>Work Organization and Retrospective – LatLongHelper Documentation</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -71,7 +71,7 @@ ul.task-list li input[type="checkbox"] {
 
 </head>
 
-<body class="nav-sidebar floating nav-fixed quarto-light">
+<body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -97,11 +97,11 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Tutorial</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="../reference/index.html" aria-current="page"> 
+    <a class="nav-link" href="../reference/index.html"> 
 <span class="menu-text">Reference</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../retrospective/retrospective.html"> 
+    <a class="nav-link active" href="../retrospective/retrospective.html" aria-current="page"> 
 <span class="menu-text">Retrospective</span></a>
   </li>  
 </ul>
@@ -117,105 +117,162 @@ ul.task-list li input[type="checkbox"] {
 </div>
       </div> <!-- /container-fluid -->
     </nav>
-  <nav class="quarto-secondary-nav">
-    <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-        <i class="bi bi-layout-text-sidebar-reverse"></i>
-      </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../reference/index.html">Function reference</a></li></ol></nav>
-        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-        </a>
-    </div>
-  </nav>
 </header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
-    <div class="sidebar-menu-container"> 
-    <ul class="list-unstyled mt-1">
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../reference/index.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Function reference</span></a>
-  </div>
-</li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
- <span class="menu-text">Available Functions</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../reference/lat_long_binning.lat_long_binning.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">lat_long_binning.lat_long_binning</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../reference/lat_long_distance.lat_long_distance.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">lat_long_distance.lat_long_distance</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../reference/plot_binned_lat_long.plot_binned_lat_long.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">plot_binned_lat_long.plot_binned_lat_long</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-    </ul>
-    </div>
-</nav>
-<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#function-reference" id="toc-function-reference" class="nav-link active" data-scroll-target="#function-reference">Function reference</a>
+  <li><a href="#issue-assignment-milestones-and-project-boards" id="toc-issue-assignment-milestones-and-project-boards" class="nav-link active" data-scroll-target="#issue-assignment-milestones-and-project-boards">Issue Assignment, Milestones, and Project Boards</a></li>
+  <li><a href="#analytical-project-board-views-data-driven-retrospective" id="toc-analytical-project-board-views-data-driven-retrospective" class="nav-link" data-scroll-target="#analytical-project-board-views-data-driven-retrospective">Analytical Project Board Views &amp; Data-Driven Retrospective</a>
   <ul class="collapse">
-  <li><a href="#geospatial-utility-functions" id="toc-geospatial-utility-functions" class="nav-link" data-scroll-target="#geospatial-utility-functions">Geospatial Utility Functions</a></li>
+  <li><a href="#velocity-how-did-our-scope-change-over-time" id="toc-velocity-how-did-our-scope-change-over-time" class="nav-link" data-scroll-target="#velocity-how-did-our-scope-change-over-time">Velocity: How did our scope change over time?</a></li>
+  <li><a href="#burn-up-chart-were-some-milestones-heavier-than-others" id="toc-burn-up-chart-were-some-milestones-heavier-than-others" class="nav-link" data-scroll-target="#burn-up-chart-were-some-milestones-heavier-than-others">Burn-up Chart: Were some milestones heavier than others?</a></li>
+  <li><a href="#team-contributions-was-the-workload-balanced" id="toc-team-contributions-was-the-workload-balanced" class="nav-link" data-scroll-target="#team-contributions-was-the-workload-balanced">Team Contributions: Was the workload balanced?</a></li>
   </ul></li>
+  <li><a href="#development-tools-infrastructure-and-organizational-practices" id="toc-development-tools-infrastructure-and-organizational-practices" class="nav-link" data-scroll-target="#development-tools-infrastructure-and-organizational-practices">Development Tools, Infrastructure, and Organizational Practices</a></li>
+  <li><a href="#daki-retrospective" id="toc-daki-retrospective" class="nav-link" data-scroll-target="#daki-retrospective">DAKI Retrospective</a></li>
+  <li><a href="#reflections" id="toc-reflections" class="nav-link" data-scroll-target="#reflections">Reflections</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Work Organization and Retrospective</h1>
+</div>
 
 
 
+<div class="quarto-title-meta">
 
-<section id="function-reference" class="level1 doc doc-index">
-<h1 class="doc doc-index">Function reference</h1>
-<section id="geospatial-utility-functions" class="level2">
-<h2 class="anchored" data-anchor-id="geospatial-utility-functions">Geospatial Utility Functions</h2>
-<p>Core classes for binning, distance computation, and plotting latitude–longitude data</p>
-<table class="caption-top table">
-<tbody>
-<tr class="odd">
-<td><a href="../reference/lat_long_binning.lat_long_binning.html#latlonghelper.lat_long_binning.lat_long_binning">lat_long_binning.lat_long_binning</a></td>
-<td>A function that is used to bin latitude and longitude into different groups</td>
-</tr>
-<tr class="even">
-<td><a href="../reference/lat_long_distance.lat_long_distance.html#latlonghelper.lat_long_distance.lat_long_distance">lat_long_distance.lat_long_distance</a></td>
-<td>A function that calculates the distance between two geographic points given their latitude</td>
-</tr>
-<tr class="odd">
-<td><a href="../reference/plot_binned_lat_long.plot_binned_lat_long.html#latlonghelper.plot_binned_lat_long.plot_binned_lat_long">plot_binned_lat_long.plot_binned_lat_long</a></td>
-<td>Visualize binned geographic coordinates on a heatmap.</td>
-</tr>
-</tbody>
-</table>
+    
+  
+    
+  </div>
+  
 
 
+</header>
+
+
+<section id="issue-assignment-milestones-and-project-boards" class="level2">
+<h2 class="anchored" data-anchor-id="issue-assignment-milestones-and-project-boards">Issue Assignment, Milestones, and Project Boards</h2>
+<p>Our team organized the project primarily using GitHub’s collaboration tools, which helped provide structure and transparency throughout the development process.</p>
+<ul>
+<li><strong>Issues:</strong> All major tasks such as feature development, documentation, testing, and infrastructure setup were tracked using GitHub issues. Each issue was assigned to specific team members and tagged with assignees and milestones, which helped clarify ownership and set clear expectations</li>
+<li><strong>Project Board:</strong> We used a GitHub Project Board with columns including <em>Backlog</em>, <em>Ready</em>, <em>In Progress</em>, <em>In Review</em>, and <em>Done</em>. This allowed us to easily visualize the current state of the project and track progress.</li>
+<li><strong>Milestones:</strong> Course deliverables were organized into milestone releases that aligned with each assignment checkpoint. This made it easier to prioritize tasks and monitor overall progress toward deadlines.</li>
+</ul>
+<p><strong>Reflection:</strong><br>
+Using GitHub issues and a shared project board helped reduce duplicated effort and improved coordination within the team. Clear issue assignments and milestone tagging ensured that work moved forward consistently and that responsibilities were well defined.</p>
+<hr>
 </section>
+<section id="analytical-project-board-views-data-driven-retrospective" class="level2">
+<h2 class="anchored" data-anchor-id="analytical-project-board-views-data-driven-retrospective">Analytical Project Board Views &amp; Data-Driven Retrospective</h2>
+<p>Our retrospective was informed by GitHub Project views and issue analytics (where applicable).</p>
+<section id="velocity-how-did-our-scope-change-over-time" class="level3">
+<h3 class="anchored" data-anchor-id="velocity-how-did-our-scope-change-over-time">Velocity: How did our scope change over time?</h3>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/milestone-progress.png" class="img-fluid figure-img"></p>
+<figcaption>The number of tasks by milestone</figcaption>
+</figure>
+</div>
+<p>Across milestones, we observed some changes in tasks. Earlier milestones (Milestones 1-3) included a larger number of exploratory and setup-related issues, while Milestone 4 focused more on refinement, documentation, and polishing.</p>
+<hr>
+</section>
+<section id="burn-up-chart-were-some-milestones-heavier-than-others" class="level3">
+<h3 class="anchored" data-anchor-id="burn-up-chart-were-some-milestones-heavier-than-others">Burn-up Chart: Were some milestones heavier than others?</h3>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/burnup.png" class="img-fluid figure-img"></p>
+<figcaption>Burn-up chart by milestone</figcaption>
+</figure>
+</div>
+<p>The burn-up view suggests that <strong>Milestone 4</strong> involved the largest concentration of issues, largely since we incorporated all feedback from the previous milestones in Milestone 4 (e.g., function name change, refactoring, CI/CD setup, documentation updates, adding badges, etc.).</p>
+<hr>
+</section>
+<section id="team-contributions-was-the-workload-balanced" class="level3">
+<h3 class="anchored" data-anchor-id="team-contributions-was-the-workload-balanced">Team Contributions: Was the workload balanced?</h3>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/contributions.png" class="img-fluid figure-img"></p>
+<figcaption>Workload by team member</figcaption>
+</figure>
+</div>
+<p>The distribution of completed issues across team members was approximately balanced:</p>
+<ul>
+<li>Paul Raadnui: 28 items</li>
+<li>Amar Gill: 20 items</li>
+<li><strong>Ashifa Hassam:</strong> 17 items</li>
+</ul>
+<p><strong>Reflection:</strong></p>
+<p>Regular check-ins helped ensure workload remained equitable and that no single team member became a bottleneck.</p>
+<hr>
+</section>
+</section>
+<section id="development-tools-infrastructure-and-organizational-practices" class="level2">
+<h2 class="anchored" data-anchor-id="development-tools-infrastructure-and-organizational-practices">Development Tools, Infrastructure, and Organizational Practices</h2>
+<ul>
+<li><strong>Version Control &amp; Branching:</strong> We used feature branches and pull requests to integrate changes into <code>main</code>. Also, we used a development branch (dev) for integrating features before merging to main. This ensures code quality and avoids running into merge conflicts.</li>
+<li><strong>CI/CD:</strong> GitHub Actions were used to automatically run tests and checks on pull requests and help with rendering website.</li>
+<li><strong>Documentation:</strong> Documentation was built using <strong>Quarto</strong> and <strong>quartodoc</strong>, enabling both narrative documentation and API references generated from source code.</li>
+<li><strong>Code Reviews:</strong> All PRs require at least one reviewer before merging.</li>
+<li><strong>Communication:</strong> The team primarily communicated through GitHub issues and pull requests as opposed to using other private channels such as Slack or email.</li>
+</ul>
+<p><strong>Scaling Up Recommendations:</strong><br>
+For a larger or longer-term project, we would consider:</p>
+<ul>
+<li>More structured and standardized issue templates</li>
+<li>Automated project board workflows and dependency tracking</li>
+<li>Stricter branch protections and release tagging</li>
+</ul>
+<hr>
+</section>
+<section id="daki-retrospective" class="level2">
+<h2 class="anchored" data-anchor-id="daki-retrospective">DAKI Retrospective</h2>
+<p><strong>Drop:</strong></p>
+<ul>
+<li><p>Last-minute pull request reviews close to deadlines</p></li>
+<li><p>Creating issues without immediately assigning ownership/milestone</p></li>
+<li><p>Last-minute cancelling meetings</p></li>
+</ul>
+<p><strong>Add:</strong></p>
+<ul>
+<li><p>Issue templates with acceptance criteria for feature and bug reports.</p></li>
+<li><p>Regular project board/workload distribution checks</p></li>
+</ul>
+<p><strong>Keep:</strong></p>
+<ul>
+<li><p>Use of GitHub Project Boards and milestones to track progress.</p></li>
+<li><p>Peer review before merging and CI checks on every PR.</p></li>
+<li><p>Constant documentation updates</p></li>
+</ul>
+<p><strong>Improve:</strong></p>
+<ul>
+<li><p>Time estimation for documentation and review tasks (not only coding)</p></li>
+<li><p>Earlier identification of task dependencies to reduce rework</p></li>
+</ul>
+<hr>
+</section>
+<section id="reflections" class="level2">
+<h2 class="anchored" data-anchor-id="reflections">Reflections</h2>
+<ul>
+<li><strong>Successes:</strong> Using GitHub issues, project boards, and automated checks helped us stay organized and catch problems early. This made collaboration smoother and reduced friction when integrating everyone’s work.</li>
+<li><strong>Improvements:</strong> At the beginning, some tasks were not clearly scoped, which led to a bit of confusion. Over time, we realized the importance of writing clearer issue descriptions and defining acceptance criteria upfront.</li>
+<li><strong>Teamwork:</strong> Regular check-ins and shared responsibility across the team helped us stay aligned and support one another, leading to steady progress and a positive collaborative experience throughout the project.</li>
+</ul>
+<hr>
+<p><em>Prepared by <strong>Paul Raadnui, Amar Gill, and Ashifa Hassam</strong>, 2025–26 DSCI-524 Group</em> 08</p>
+
+
 </section>
 
 </main> <!-- /main -->

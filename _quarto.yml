@@ -16,6 +16,8 @@ website:
         href: tutorial/tutorial.qmd
       - text: "Reference"
         href: reference/index.qmd
+      - text: "Retrospective"
+        href: retrospective/retrospective.qmd
     right:
       - icon: github
         href: https://github.com/UBC-MDS/DSCI_524_Group_8_LatLongHelper
