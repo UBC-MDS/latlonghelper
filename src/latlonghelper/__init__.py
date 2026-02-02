@@ -1,6 +1,8 @@
-# read version from installed package
-from importlib.metadata import version
-__version__ = version("latlonghelper")
+"""
+Top-level imports for latlonghelper.
+
+This module defines the public API and exposes the package version.
+"""
 
 from .__about__ import __version__
 

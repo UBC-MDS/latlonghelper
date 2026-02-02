@@ -1,7 +1,7 @@
-# lat_long_distance.lat_long_distance { #latlonghelper.lat_long_distance.lat_long_distance }
+# lat_long_distance { #latlonghelper.lat_long_distance }
 
 ```python
-lat_long_distance.lat_long_distance(
+lat_long_distance(
     latitude_1,
     longitude_1,
     latitude_2,

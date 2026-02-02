@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>plot_binned_lat_long.plot_binned_lat_long – LatLongHelper Documentation</title>
+<title>plot_binned_lat_long – LatLongHelper Documentation</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -157,7 +157,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../reference/lat_long_binning.lat_long_binning.html">Available Functions</a></li><li class="breadcrumb-item"><a href="../reference/plot_binned_lat_long.plot_binned_lat_long.html">plot_binned_lat_long.plot_binned_lat_long</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../reference/lat_long_binning.html">Available Functions</a></li><li class="breadcrumb-item"><a href="../reference/plot_binned_lat_long.html">plot_binned_lat_long</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -186,20 +186,20 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../reference/lat_long_binning.lat_long_binning.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">lat_long_binning.lat_long_binning</span></a>
+  <a href="../reference/lat_long_binning.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">lat_long_binning</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../reference/lat_long_distance.lat_long_distance.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">lat_long_distance.lat_long_distance</span></a>
+  <a href="../reference/lat_long_distance.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">lat_long_distance</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../reference/plot_binned_lat_long.plot_binned_lat_long.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">plot_binned_lat_long.plot_binned_lat_long</span></a>
+  <a href="../reference/plot_binned_lat_long.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">plot_binned_lat_long</span></a>
   </div>
 </li>
       </ul>
@@ -214,7 +214,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#latlonghelper.plot_binned_lat_long.plot_binned_lat_long" id="toc-latlonghelper.plot_binned_lat_long.plot_binned_lat_long" class="nav-link active" data-scroll-target="#latlonghelper.plot_binned_lat_long.plot_binned_lat_long">plot_binned_lat_long.plot_binned_lat_long</a>
+  <li><a href="#latlonghelper.plot_binned_lat_long" id="toc-latlonghelper.plot_binned_lat_long" class="nav-link active" data-scroll-target="#latlonghelper.plot_binned_lat_long">plot_binned_lat_long</a>
   <ul class="collapse">
   <li><a href="#parameters" id="toc-parameters" class="nav-link" data-scroll-target="#parameters">Parameters</a></li>
   <li><a href="#returns" id="toc-returns" class="nav-link" data-scroll-target="#returns">Returns</a></li>
@@ -224,14 +224,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../reference/lat_long_binning.lat_long_binning.html">Available Functions</a></li><li class="breadcrumb-item"><a href="../reference/plot_binned_lat_long.plot_binned_lat_long.html">plot_binned_lat_long.plot_binned_lat_long</a></li></ol></nav></header>
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../reference/lat_long_binning.html">Available Functions</a></li><li class="breadcrumb-item"><a href="../reference/plot_binned_lat_long.html">plot_binned_lat_long</a></li></ol></nav></header>
 
 
 
 
-<section id="latlonghelper.plot_binned_lat_long.plot_binned_lat_long" class="level1">
-<h1>plot_binned_lat_long.plot_binned_lat_long</h1>
-<div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>plot_binned_lat_long.plot_binned_lat_long(binned_data, width<span class="op">=</span><span class="dv">10</span>, height<span class="op">=</span><span class="dv">6</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="latlonghelper.plot_binned_lat_long" class="level1">
+<h1>plot_binned_lat_long</h1>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>plot_binned_lat_long(binned_data, width<span class="op">=</span><span class="dv">10</span>, height<span class="op">=</span><span class="dv">6</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Visualize binned geographic coordinates on a heatmap.</p>
 <p>This function takes the output of <code>lat_long_binning</code> and visualizes the spatial density of points using a heatmap, where each cell represents a latitude–longitude bin and the color intensity indicates the number of observations in that bin.</p>
 <section id="parameters" class="level2 doc-section doc-section-parameters">

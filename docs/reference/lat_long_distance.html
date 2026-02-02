@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>lat_long_binning.lat_long_binning – LatLongHelper Documentation</title>
+<title>lat_long_distance – LatLongHelper Documentation</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -157,7 +157,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../reference/lat_long_binning.lat_long_binning.html">Available Functions</a></li><li class="breadcrumb-item"><a href="../reference/lat_long_binning.lat_long_binning.html">lat_long_binning.lat_long_binning</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../reference/lat_long_binning.html">Available Functions</a></li><li class="breadcrumb-item"><a href="../reference/lat_long_distance.html">lat_long_distance</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -186,20 +186,20 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../reference/lat_long_binning.lat_long_binning.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">lat_long_binning.lat_long_binning</span></a>
+  <a href="../reference/lat_long_binning.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">lat_long_binning</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../reference/lat_long_distance.lat_long_distance.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">lat_long_distance.lat_long_distance</span></a>
+  <a href="../reference/lat_long_distance.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">lat_long_distance</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../reference/plot_binned_lat_long.plot_binned_lat_long.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">plot_binned_lat_long.plot_binned_lat_long</span></a>
+  <a href="../reference/plot_binned_lat_long.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">plot_binned_lat_long</span></a>
   </div>
 </li>
       </ul>
@@ -214,7 +214,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#latlonghelper.lat_long_binning.lat_long_binning" id="toc-latlonghelper.lat_long_binning.lat_long_binning" class="nav-link active" data-scroll-target="#latlonghelper.lat_long_binning.lat_long_binning">lat_long_binning.lat_long_binning</a>
+  <li><a href="#latlonghelper.lat_long_distance" id="toc-latlonghelper.lat_long_distance" class="nav-link active" data-scroll-target="#latlonghelper.lat_long_distance">lat_long_distance</a>
   <ul class="collapse">
   <li><a href="#parameters" id="toc-parameters" class="nav-link" data-scroll-target="#parameters">Parameters</a></li>
   <li><a href="#returns" id="toc-returns" class="nav-link" data-scroll-target="#returns">Returns</a></li>
@@ -225,28 +225,29 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../reference/lat_long_binning.lat_long_binning.html">Available Functions</a></li><li class="breadcrumb-item"><a href="../reference/lat_long_binning.lat_long_binning.html">lat_long_binning.lat_long_binning</a></li></ol></nav></header>
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../reference/lat_long_binning.html">Available Functions</a></li><li class="breadcrumb-item"><a href="../reference/lat_long_distance.html">lat_long_distance</a></li></ol></nav></header>
 
 
 
 
-<section id="latlonghelper.lat_long_binning.lat_long_binning" class="level1">
-<h1>lat_long_binning.lat_long_binning</h1>
-<div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>lat_long_binning.lat_long_binning(</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    latitude,</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    longitude,</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    grid_size_latitude<span class="op">=</span><span class="fl">0.01</span>,</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    grid_size_longitude<span class="op">=</span><span class="fl">0.01</span>,</span>
+<section id="latlonghelper.lat_long_distance" class="level1">
+<h1>lat_long_distance</h1>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>lat_long_distance(</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    latitude_1,</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    longitude_1,</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    latitude_2,</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    longitude_2,</span>
 <span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>A function that is used to bin latitude and longitude into different groups</p>
+<p>A function that calculates the distance between two geographic points given their latitude and longitude coordinates.</p>
+<p>Addendum: The use of the Haversine formula for distance calculation was suggested by ChatGPT. The Haversine formula was chosen because it accounts for the curvature of the Earth, providing an accurate “great-circle” distance between two points given their latitude and longitude, rather than assuming a flat surface.</p>
 <section id="parameters" class="level2 doc-section doc-section-parameters">
 <h2 class="doc-section doc-section-parameters anchored" data-anchor-id="parameters">Parameters</h2>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 27%">
-<col style="width: 10%">
-<col style="width: 46%">
-<col style="width: 15%">
+<col style="width: 14%">
+<col style="width: 8%">
+<col style="width: 62%">
+<col style="width: 13%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -258,28 +259,28 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </thead>
 <tbody>
 <tr class="odd">
-<td>latitude</td>
+<td>latitude_1</td>
 <td>float</td>
-<td>Latitude in degrees (-90 to 90)</td>
+<td>Latitude of the first point in degrees (-90 to 90)</td>
 <td><em>required</em></td>
 </tr>
 <tr class="even">
-<td>longitude</td>
+<td>longitude_1</td>
 <td>float</td>
-<td>Longitude in degrees (-180 to 180)</td>
+<td>Longitude of the first point in degrees (-180 to 180)</td>
 <td><em>required</em></td>
 </tr>
 <tr class="odd">
-<td>grid_size_latitude</td>
+<td>latitude_2</td>
 <td>float</td>
-<td>Grid size of latitude in degrees</td>
-<td><code>0.01</code></td>
+<td>Latitude of the second point in degrees (-90 to 90)</td>
+<td><em>required</em></td>
 </tr>
 <tr class="even">
-<td>grid_size_longitude</td>
+<td>longitude_2</td>
 <td>float</td>
-<td>Grid size of longitude in degrees</td>
-<td><code>0.01</code></td>
+<td>Longitude of the second point in degrees (-180 to 180)</td>
+<td><em>required</em></td>
 </tr>
 </tbody>
 </table>
@@ -287,11 +288,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="returns" class="level2 doc-section doc-section-returns">
 <h2 class="doc-section doc-section-returns anchored" data-anchor-id="returns">Returns</h2>
 <table class="caption-top table">
-<colgroup>
-<col style="width: 11%">
-<col style="width: 11%">
-<col style="width: 77%">
-</colgroup>
 <thead>
 <tr class="header">
 <th>Name</th>
@@ -301,9 +297,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </thead>
 <tbody>
 <tr class="odd">
-<td></td>
-<td>str</td>
-<td>Identifier of the binned latitude–longitude grid cell</td>
+<td>distance</td>
+<td>float</td>
+<td>Distance between the two points (in kilometers)</td>
 </tr>
 </tbody>
 </table>
@@ -312,9 +308,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 class="doc-section doc-section-raises anchored" data-anchor-id="raises">Raises</h2>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 5%">
 <col style="width: 8%">
-<col style="width: 86%">
+<col style="width: 12%">
+<col style="width: 79%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -326,21 +322,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <tbody>
 <tr class="odd">
 <td></td>
-<td>TypeError</td>
-<td>If <code>latitude</code>, <code>longitude</code>, <code>grid_size_latitude</code>, or <code>grid_size_longitude</code> are not numeric.</td>
-</tr>
-<tr class="even">
-<td></td>
 <td>ValueError</td>
-<td>If <code>latitude</code> is outside [-90, 90], <code>longitude</code> is outside [-180, 180], or if either grid size is less than or equal to 0.</td>
+<td>If any latitude is outside [-90, 90] or any longitude is outside [-180, 180].</td>
 </tr>
 </tbody>
 </table>
 </section>
 <section id="examples" class="level2 doc-section doc-section-examples">
 <h2 class="doc-section doc-section-examples anchored" data-anchor-id="examples">Examples</h2>
-<div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> lat_long_binning(<span class="fl">49.2593</span>, <span class="op">-</span><span class="fl">123.2475</span>)</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="co">'49.25_-123.25'</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> lat_long_distance(<span class="fl">40.7128</span>, <span class="op">-</span><span class="fl">74.0060</span>, <span class="fl">34.0522</span>, <span class="op">-</span><span class="fl">118.2437</span>)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fl">3935.75</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 
 </section>
