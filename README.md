@@ -1,7 +1,7 @@
 # latlonghelper
 
-[![build](https://github.com/UBC-MDS/DSCI_524_Group_8_LatLongHelper/actions/workflows/build.yml/badge.svg)](https://github.com/UBC-MDS/DSCI_524_Group_8_LatLongHelper/actions/workflows/build.yml)
-[![codecov](https://codecov.io/gh/UBC-MDS/latlonghelper/branch/main/graph/badge.svg?token=ZT9sK6gx1A)](https://codecov.io/gh/UBC-MDS/latlonghelper)[![Documentation](https://img.shields.io/badge/docs-GitHub%20Pages-blue)](https://ubc-mds.github.io/DSCI_524_Group_8_LatLongHelper/)
+[![build](https://github.com/UBC-MDS/latlonghelper/actions/workflows/build.yml/badge.svg)](https://github.com/UBC-MDS/latlonghelper/actions/workflows/build.yml)
+[![codecov](https://codecov.io/gh/UBC-MDS/latlonghelper/branch/main/graph/badge.svg?token=ZT9sK6gx1A)](https://codecov.io/gh/UBC-MDS/latlonghelper)[![Documentation](https://img.shields.io/badge/docs-GitHub%20Pages-blue)]([https://ubc-mds.github.io/DSCI_524_Group_8_LatLongHelper/](https://ubc-mds.github.io/latlonghelper/))
 [![Python](https://img.shields.io/badge/python-3.8%20%E2%80%93%203.14-blue)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
