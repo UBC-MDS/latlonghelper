@@ -1,7 +1,8 @@
 # Contributing
 
-Contributions are welcome, and they are greatly appreciated! Every little bit
-helps, and credit will always be given.
+Thank you for your interest in contributing to `latlonghelper`, a Python package for cleaning, binning, and visualizing geospatial latitude–longitude data.
+
+For an overview of the project, usage examples, and installation instructions for users, please see the README.
 
 ## Types of Contributions
 
@@ -51,21 +52,39 @@ Ready to contribute? Here's how to set up `latlonghelper` for local development.
     $ conda activate latlonghelper
     ```
 
-3. Install `latlonghelper` using `poetry`:
+3. Install `latlonghelper` in editable mode:
 
     ```console
-    $ poetry install
+    $ pip install -e .
     ```
 
-4. Use `git` (or similar) to create a branch for local development and make your changes:
+4. Install development and testing dependencies:
+
+    ```console
+    $ pip install -e ".[dev]"
+    ```
+
+5. Use `git` (or similar) to create a branch for local development and make your changes:
 
     ```console
     $ git checkout -b name-of-your-bugfix-or-feature
     ```
 
-5. When you're done making changes, check that your changes conform to any code formatting requirements and pass any tests.
+6. When you're done making changes, check that your changes conform to any code formatting requirements and pass any tests.
 
-6. Commit your changes and open a pull request.
+7. Commit your changes and open a pull request.
+
+## Running Tests
+
+Before submitting a pull request, please run the test suite:
+
+```console
+$ pytest
+
+To check test coverage:
+
+$ pytest --cov=src/latlonghelper
+```
 
 ## Pull Request Guidelines
 
