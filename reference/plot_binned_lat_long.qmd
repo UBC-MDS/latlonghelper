@@ -1,7 +1,7 @@
-# plot_binned_lat_long.plot_binned_lat_long { #latlonghelper.plot_binned_lat_long.plot_binned_lat_long }
+# plot_binned_lat_long { #latlonghelper.plot_binned_lat_long }
 
 ```python
-plot_binned_lat_long.plot_binned_lat_long(binned_data, width=10, height=6)
+plot_binned_lat_long(binned_data, width=10, height=6)
 ```
 
 Visualize binned geographic coordinates on a heatmap.

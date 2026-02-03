@@ -1,46 +1,62 @@
 # latlonghelper
 
+[![build](https://github.com/UBC-MDS/latlonghelper/actions/workflows/build.yml/badge.svg)](https://github.com/UBC-MDS/latlonghelper/actions/workflows/build.yml)
 [![codecov](https://codecov.io/gh/UBC-MDS/latlonghelper/branch/main/graph/badge.svg?token=ZT9sK6gx1A)](https://codecov.io/gh/UBC-MDS/latlonghelper)
+[![Documentation](https://img.shields.io/badge/docs-GitHub%20Pages-blue)](https://ubc-mds.github.io/latlonghelper/)
+[![Python](https://img.shields.io/badge/python-3.8%20%E2%80%93%203.14-blue)](https://www.python.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-A package for cleaning and utilizing geospatial data. Allows the use of geospatial
-data to help create summarizations such as distance calculations or rudimentary
-visualizations via latitude–longitude binning.
+
+A package for cleaning and utilizing geospatial data. Allows the use of
+geospatial data to help create summarizations such as distance
+calculations or rudimentary visualizations via latitude–longitude
+binning.
 
 Functions included:
 
-- `lat_long_distance`: calculates the distance (in kilometres) between two geographic points given their latitude and longitude coordinates.
-- `lat_long_binning`: bins latitude and longitude into different groups to aid in grouping or for use in `plot_binned_lat_long`.
-- `plot_binned_lat_long`: visualizes binned geographic coordinates on a heatmap.
+-   `lat_long_distance`: calculates the distance (in kilometres) between
+    two geographic points given their latitude and longitude
+    coordinates.
+-   `lat_long_binning`: bins latitude and longitude into different
+    groups to aid in grouping or for use in `plot_binned_lat_long`.
+-   `plot_binned_lat_long`: visualizes binned geographic coordinates on
+    a heatmap.
 
-`lat_long_distance` is a common function found in many packages such as [GeoPy](https://geopy.readthedocs.io/en/stable/) and [Haversine](https://pypi.org/project/haversine/). However, binning and plotting such binned latitudes and longitudes does not currently exist. Current methods to bin require the use of multiple `Pandas` functions to do so. We aim to create a simplification of the binning and their plot without the user's having to rely on multiple uses and transformation on their part.
+`lat_long_distance` is a common function found in many packages such as
+[GeoPy](https://geopy.readthedocs.io/en/stable/) and
+[Haversine](https://pypi.org/project/haversine/). However, binning and
+plotting such binned latitudes and longitudes does not currently exist.
+Current methods to bin require the use of multiple `Pandas` functions to
+do so. We aim to create a simplification of the binning and their plot
+without the user's having to rely on multiple uses and transformation on
+their part.
 
 ## What does “binning” latitude and longitude mean?
 
-Binning latitude and longitude refers to **grouping nearby geographic points into
-fixed-size grid cells**.
+Binning latitude and longitude refers to **grouping nearby geographic
+points into fixed-size grid cells**.
 
-For example, with a grid size of `0.05°`, all points whose latitudes fall between
-49.25 and 49.30 and longitudes between −123.20 and −123.15 would be assigned to the
-same bin. This is useful for:
+For example, with a grid size of `0.05°`, all points whose latitudes
+fall between 49.25 and 49.30 and longitudes between −123.20 and −123.15
+would be assigned to the same bin. This is useful for:
 
-- aggregating spatial data
-- counting observations in geographic regions
-- creating density-style visualizations (e.g., heatmaps)
-- reducing noise in very precise GPS data
+-   aggregating spatial data
+-   counting observations in geographic regions
+-   creating density-style visualizations (e.g., heatmaps)
+-   reducing noise in very precise GPS data
 
 ## Example output
 
-Below is an example heatmap produced by `plot_binned_lat_long`, showing the spatial
-density of binned latitude–longitude points.
+Below is an example heatmap produced by `plot_binned_lat_long`, showing
+the spatial density of binned latitude–longitude points.
 ![](images/Figure_1.png)
-
 
 ## Usage example
 
-```python
-from latlonghelper.lat_long_binning import lat_long_binning
-from latlonghelper.lat_long_distance import lat_long_distance
-from latlonghelper.plot_binned_lat_long import plot_binned_lat_long
+``` python
+from latlonghelper import lat_long_binning
+from latlonghelper import lat_long_distance
+from latlonghelper import plot_binned_lat_long
 import matplotlib.pyplot as plt
 
 # Example coordinates (Vancouver area)
@@ -61,35 +77,38 @@ distance = lat_long_distance(49.2606, -123.2460, 49.2827, -123.1207)
 print(distance)
 ```
 
-More detailed examples and tutorials are available on the documentation website.
-
+More detailed examples and tutorials are available on the documentation
+website.
 
 ## Documentation
 
-Full documentation, including API references and examples, is available at:
+Full documentation, including API references and examples, is available
+at:
 
 👉 **https://UBC-MDS.github.io/latlonghelper/**
 
 ## Installation
 
 ### Prerequisites
-- Python 3.8+
-- `pip`
+
+-   Python 3.8+
+-   `pip`
 
 ### Install from source (recommended)
 
 Clone the repository and install the package in editable mode:
 
-```bash
+``` bash
 git clone https://github.com/UBC-MDS/latlonghelper
 cd latlonghelper
 ```
 
 ### Create a conda environment
 
-If you are using conda, you can create the development environment using:
+If you are using conda, you can create the development environment
+using:
 
-```bash
+``` bash
 conda env create -f environment.yml
 conda activate latlonghelper-env
 pip install -e .
@@ -97,49 +116,53 @@ pip install -e .
 
 ## To run the tests
 
-You can run the tests for this package using `pytest`. First, install the testing dependencies:
+You can run the tests for this package using `pytest`. First, install
+the testing dependencies:
 
-```bash
+``` bash
 pip install -e ".[dev]"
 ```
 
 Then, run the tests with:
-```
+
+```         
 pytest
 ```
+
 To view the test coverage, run the following command:
-```
+
+```         
 pytest --cov=src/latlonghelper
 ```
 
-
 ## Dependencies
 
-The following Python packages are required:
-Runtime dependencies:
-- pandas
-- matplotlib
-- seaborn
+The following Python packages are required: Runtime dependencies: -
+pandas - matplotlib - seaborn
 
-Development and testing dependencies:
-- pytest
-- pytest-cov
+Development and testing dependencies: - pytest - pytest-cov
 
 ## Build, Preview, and Deploy the Documentation
-1. Build and preview the documentation.
-```bash
+
+1.  Build and preview the documentation.
+
+``` bash
 quartodoc build
 quarto preview
 ```
+
 To update the documentation website.
-```bash
+
+``` bash
 quarto publish gh-pages
 ```
 
 ## Contributing
 
-Interested in contributing? Please see the [CONTRIBUTING.md](CONTRIBUTING.md) file.
-This project is released with a [Code of Conduct](CONDUCT.md), and by contributing you agree to abide by its terms.
+Interested in contributing? Please see the
+[CONTRIBUTING.md](CONTRIBUTING.md) file. This project is released with a
+[Code of Conduct](CONDUCT.md), and by contributing you agree to abide by
+its terms.
 
 ## License
 
@@ -147,8 +170,12 @@ It is licensed under the terms of the MIT license.
 
 ## Contributors
 
-`latlonghelper` was created by Paul Raadnui, Ashifa Hassam and Amar Gill.
+`latlonghelper` was created by Paul Raadnui, Ashifa Hassam and Amar
+Gill.
 
 ## Credits
 
-`latlonghelper` was created with [`cookiecutter`](https://cookiecutter.readthedocs.io/en/latest/) and the `py-pkgs-cookiecutter` [template](https://github.com/py-pkgs/py-pkgs-cookiecutter).
+`latlonghelper` was created with
+[`cookiecutter`](https://cookiecutter.readthedocs.io/en/latest/) and the
+`py-pkgs-cookiecutter`
+[template](https://github.com/py-pkgs/py-pkgs-cookiecutter).

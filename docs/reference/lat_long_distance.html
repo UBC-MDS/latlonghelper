@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>LatLongHelper Documentation</title>
+<title>lat_long_distance – LatLongHelper Documentation</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -58,23 +58,23 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-d24c3880db9ce3ca4ea2d5bb002bea1f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-d24c3880db9ce3ca4ea2d5bb002bea1f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -106,14 +106,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="nav-sidebar floating nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">LatLongHelper</span>
     </a>
   </div>
@@ -124,19 +124,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./tutorial/tutorial.html"> 
+    <a class="nav-link" href="../tutorial/tutorial.html"> 
 <span class="menu-text">Tutorial</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./reference/index.html"> 
+    <a class="nav-link active" href="../reference/index.html" aria-current="page"> 
 <span class="menu-text">Reference</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./retrospective/retrospective.html"> 
+    <a class="nav-link" href="../retrospective/retrospective.html"> 
 <span class="menu-text">Retrospective</span></a>
   </li>  
 </ul>
@@ -152,168 +152,186 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
       </div> <!-- /container-fluid -->
     </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../reference/lat_long_binning.html">Available Functions</a></li><li class="breadcrumb-item"><a href="../reference/lat_long_distance.html">lat_long_distance</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
 </header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../reference/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Function reference</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Available Functions</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../reference/lat_long_binning.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">lat_long_binning</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../reference/lat_long_distance.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">lat_long_distance</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../reference/plot_binned_lat_long.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">plot_binned_lat_long</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#latlonghelper" id="toc-latlonghelper" class="nav-link active" data-scroll-target="#latlonghelper">latlonghelper</a>
+  <li><a href="#latlonghelper.lat_long_distance" id="toc-latlonghelper.lat_long_distance" class="nav-link active" data-scroll-target="#latlonghelper.lat_long_distance">lat_long_distance</a>
   <ul class="collapse">
-  <li><a href="#what-does-binning-latitude-and-longitude-mean" id="toc-what-does-binning-latitude-and-longitude-mean" class="nav-link" data-scroll-target="#what-does-binning-latitude-and-longitude-mean">What does “binning” latitude and longitude mean?</a></li>
-  <li><a href="#example-output" id="toc-example-output" class="nav-link" data-scroll-target="#example-output">Example output</a></li>
-  <li><a href="#usage-example" id="toc-usage-example" class="nav-link" data-scroll-target="#usage-example">Usage example</a></li>
-  <li><a href="#documentation" id="toc-documentation" class="nav-link" data-scroll-target="#documentation">Documentation</a></li>
-  <li><a href="#installation" id="toc-installation" class="nav-link" data-scroll-target="#installation">Installation</a>
-  <ul class="collapse">
-  <li><a href="#prerequisites" id="toc-prerequisites" class="nav-link" data-scroll-target="#prerequisites">Prerequisites</a></li>
-  <li><a href="#install-from-source-recommended" id="toc-install-from-source-recommended" class="nav-link" data-scroll-target="#install-from-source-recommended">Install from source (recommended)</a></li>
-  <li><a href="#create-a-conda-environment" id="toc-create-a-conda-environment" class="nav-link" data-scroll-target="#create-a-conda-environment">Create a conda environment</a></li>
-  </ul></li>
-  <li><a href="#to-run-the-tests" id="toc-to-run-the-tests" class="nav-link" data-scroll-target="#to-run-the-tests">To run the tests</a></li>
-  <li><a href="#dependencies" id="toc-dependencies" class="nav-link" data-scroll-target="#dependencies">Dependencies</a></li>
-  <li><a href="#build-preview-and-deploy-the-documentation" id="toc-build-preview-and-deploy-the-documentation" class="nav-link" data-scroll-target="#build-preview-and-deploy-the-documentation">Build, Preview, and Deploy the Documentation</a></li>
-  <li><a href="#contributing" id="toc-contributing" class="nav-link" data-scroll-target="#contributing">Contributing</a></li>
-  <li><a href="#license" id="toc-license" class="nav-link" data-scroll-target="#license">License</a></li>
-  <li><a href="#contributors" id="toc-contributors" class="nav-link" data-scroll-target="#contributors">Contributors</a></li>
-  <li><a href="#credits" id="toc-credits" class="nav-link" data-scroll-target="#credits">Credits</a></li>
+  <li><a href="#parameters" id="toc-parameters" class="nav-link" data-scroll-target="#parameters">Parameters</a></li>
+  <li><a href="#returns" id="toc-returns" class="nav-link" data-scroll-target="#returns">Returns</a></li>
+  <li><a href="#raises" id="toc-raises" class="nav-link" data-scroll-target="#raises">Raises</a></li>
+  <li><a href="#examples" id="toc-examples" class="nav-link" data-scroll-target="#examples">Examples</a></li>
   </ul></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../reference/lat_long_binning.html">Available Functions</a></li><li class="breadcrumb-item"><a href="../reference/lat_long_distance.html">lat_long_distance</a></li></ol></nav></header>
 
 
 
 
-<section id="latlonghelper" class="level1">
-<h1>latlonghelper</h1>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="https://codecov.io/gh/UBC-MDS/latlonghelper"><img src="https://codecov.io/gh/UBC-MDS/latlonghelper/branch/main/graph/badge.svg?token=ZT9sK6gx1A" class="img-fluid figure-img"></a></p>
-<figcaption>codecov</figcaption>
-</figure>
-</div>
-<p>A package for cleaning and utilizing geospatial data. Allows the use of geospatial data to help create summarizations such as distance calculations or rudimentary visualizations via latitude–longitude binning.</p>
-<p>Functions included:</p>
-<ul>
-<li><code>lat_long_distance</code>: calculates the distance (in kilometres) between two geographic points given their latitude and longitude coordinates.</li>
-<li><code>lat_long_binning</code>: bins latitude and longitude into different groups to aid in grouping or for use in <code>plot_binned_lat_long</code>.</li>
-<li><code>plot_binned_lat_long</code>: visualizes binned geographic coordinates on a heatmap.</li>
-</ul>
-<p><code>lat_long_distance</code> is a common function found in many packages such as <a href="https://geopy.readthedocs.io/en/stable/">GeoPy</a> and <a href="https://pypi.org/project/haversine/">Haversine</a>. However, binning and plotting such binned latitudes and longitudes does not currently exist. Current methods to bin require the use of multiple <code>Pandas</code> functions to do so. We aim to create a simplification of the binning and their plot without the user’s having to rely on multiple uses and transformation on their part.</p>
-<section id="what-does-binning-latitude-and-longitude-mean" class="level2">
-<h2 class="anchored" data-anchor-id="what-does-binning-latitude-and-longitude-mean">What does “binning” latitude and longitude mean?</h2>
-<p>Binning latitude and longitude refers to <strong>grouping nearby geographic points into fixed-size grid cells</strong>.</p>
-<p>For example, with a grid size of <code>0.05°</code>, all points whose latitudes fall between 49.25 and 49.30 and longitudes between −123.20 and −123.15 would be assigned to the same bin. This is useful for:</p>
-<ul>
-<li>aggregating spatial data</li>
-<li>counting observations in geographic regions</li>
-<li>creating density-style visualizations (e.g., heatmaps)</li>
-<li>reducing noise in very precise GPS data</li>
-</ul>
+<section id="latlonghelper.lat_long_distance" class="level1">
+<h1>lat_long_distance</h1>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>lat_long_distance(</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    latitude_1,</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    longitude_1,</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    latitude_2,</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    longitude_2,</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>A function that calculates the distance between two geographic points given their latitude and longitude coordinates.</p>
+<p>Addendum: The use of the Haversine formula for distance calculation was suggested by ChatGPT. The Haversine formula was chosen because it accounts for the curvature of the Earth, providing an accurate “great-circle” distance between two points given their latitude and longitude, rather than assuming a flat surface.</p>
+<section id="parameters" class="level2 doc-section doc-section-parameters">
+<h2 class="doc-section doc-section-parameters anchored" data-anchor-id="parameters">Parameters</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 14%">
+<col style="width: 8%">
+<col style="width: 62%">
+<col style="width: 13%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>latitude_1</td>
+<td>float</td>
+<td>Latitude of the first point in degrees (-90 to 90)</td>
+<td><em>required</em></td>
+</tr>
+<tr class="even">
+<td>longitude_1</td>
+<td>float</td>
+<td>Longitude of the first point in degrees (-180 to 180)</td>
+<td><em>required</em></td>
+</tr>
+<tr class="odd">
+<td>latitude_2</td>
+<td>float</td>
+<td>Latitude of the second point in degrees (-90 to 90)</td>
+<td><em>required</em></td>
+</tr>
+<tr class="even">
+<td>longitude_2</td>
+<td>float</td>
+<td>Longitude of the second point in degrees (-180 to 180)</td>
+<td><em>required</em></td>
+</tr>
+</tbody>
+</table>
 </section>
-<section id="example-output" class="level2">
-<h2 class="anchored" data-anchor-id="example-output">Example output</h2>
-<p>Below is an example heatmap produced by <code>plot_binned_lat_long</code>, showing the spatial density of binned latitude–longitude points. <img src="images/Figure_1.png" class="img-fluid"></p>
+<section id="returns" class="level2 doc-section doc-section-returns">
+<h2 class="doc-section doc-section-returns anchored" data-anchor-id="returns">Returns</h2>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>distance</td>
+<td>float</td>
+<td>Distance between the two points (in kilometers)</td>
+</tr>
+</tbody>
+</table>
 </section>
-<section id="usage-example" class="level2">
-<h2 class="anchored" data-anchor-id="usage-example">Usage example</h2>
-<div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> latlonghelper <span class="im">import</span> lat_long_binning</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> latlonghelper <span class="im">import</span> lat_long_distance</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> latlonghelper <span class="im">import</span> plot_binned_lat_long</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Example coordinates (Vancouver area)</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>latitudes <span class="op">=</span> [<span class="fl">49.2606</span>, <span class="fl">49.2827</span>, <span class="fl">49.2685</span>]</span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>longitudes <span class="op">=</span> [<span class="op">-</span><span class="fl">123.2460</span>, <span class="op">-</span><span class="fl">123.1207</span>, <span class="op">-</span><span class="fl">123.1686</span>]</span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Bin coordinates</span></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>binned <span class="op">=</span> []</span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> lat, lon <span class="kw">in</span> <span class="bu">zip</span>(latitudes, longitudes):</span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>    binned.append(lat_long_binning(lat, lon, <span class="fl">0.05</span>, <span class="fl">0.05</span>))</span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot heatmap</span></span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>ax <span class="op">=</span> plot_binned_lat_long(binned)</span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>plt.show()</span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="co"># Distance example</span></span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>distance <span class="op">=</span> lat_long_distance(<span class="fl">49.2606</span>, <span class="op">-</span><span class="fl">123.2460</span>, <span class="fl">49.2827</span>, <span class="op">-</span><span class="fl">123.1207</span>)</span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(distance)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>More detailed examples and tutorials are available on the documentation website.</p>
+<section id="raises" class="level2 doc-section doc-section-raises">
+<h2 class="doc-section doc-section-raises anchored" data-anchor-id="raises">Raises</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 8%">
+<col style="width: 12%">
+<col style="width: 79%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td></td>
+<td>ValueError</td>
+<td>If any latitude is outside [-90, 90] or any longitude is outside [-180, 180].</td>
+</tr>
+</tbody>
+</table>
 </section>
-<section id="documentation" class="level2">
-<h2 class="anchored" data-anchor-id="documentation">Documentation</h2>
-<p>Full documentation, including API references and examples, is available at:</p>
-<p>👉 <strong>https://UBC-MDS.github.io/latlonghelper/</strong></p>
-</section>
-<section id="installation" class="level2">
-<h2 class="anchored" data-anchor-id="installation">Installation</h2>
-<section id="prerequisites" class="level3">
-<h3 class="anchored" data-anchor-id="prerequisites">Prerequisites</h3>
-<ul>
-<li>Python 3.8+</li>
-<li><code>pip</code></li>
-</ul>
-</section>
-<section id="install-from-source-recommended" class="level3">
-<h3 class="anchored" data-anchor-id="install-from-source-recommended">Install from source (recommended)</h3>
-<p>Clone the repository and install the package in editable mode:</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> clone https://github.com/UBC-MDS/latlonghelper</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> latlonghelper</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
-<section id="create-a-conda-environment" class="level3">
-<h3 class="anchored" data-anchor-id="create-a-conda-environment">Create a conda environment</h3>
-<p>If you are using conda, you can create the development environment using:</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> env create <span class="at">-f</span> environment.yml</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> activate latlonghelper-env</span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install <span class="at">-e</span> .</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
-</section>
-<section id="to-run-the-tests" class="level2">
-<h2 class="anchored" data-anchor-id="to-run-the-tests">To run the tests</h2>
-<p>You can run the tests for this package using <code>pytest</code>. First, install the testing dependencies:</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install <span class="at">-e</span> <span class="st">".[dev]"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Then, run the tests with:</p>
-<pre><code>pytest</code></pre>
-<p>To view the test coverage, run the following command:</p>
-<pre><code>pytest --cov=src/latlonghelper</code></pre>
-</section>
-<section id="dependencies" class="level2">
-<h2 class="anchored" data-anchor-id="dependencies">Dependencies</h2>
-<p>The following Python packages are required: Runtime dependencies: - pandas - matplotlib - seaborn</p>
-<p>Development and testing dependencies: - pytest - pytest-cov</p>
-</section>
-<section id="build-preview-and-deploy-the-documentation" class="level2">
-<h2 class="anchored" data-anchor-id="build-preview-and-deploy-the-documentation">Build, Preview, and Deploy the Documentation</h2>
-<ol type="1">
-<li>Build and preview the documentation.</li>
-</ol>
-<div class="sourceCode" id="cb7"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quartodoc</span> build</span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> preview</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>To update the documentation website.</p>
-<div class="sourceCode" id="cb8"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> publish gh-pages</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
-<section id="contributing" class="level2">
-<h2 class="anchored" data-anchor-id="contributing">Contributing</h2>
-<p>Interested in contributing? Please see the <a href="./CONTRIBUTING.html">CONTRIBUTING.md</a> file. This project is released with a <a href="./CONDUCT.html">Code of Conduct</a>, and by contributing you agree to abide by its terms.</p>
-</section>
-<section id="license" class="level2">
-<h2 class="anchored" data-anchor-id="license">License</h2>
-<p>It is licensed under the terms of the MIT license.</p>
-</section>
-<section id="contributors" class="level2">
-<h2 class="anchored" data-anchor-id="contributors">Contributors</h2>
-<p><code>latlonghelper</code> was created by Paul Raadnui, Ashifa Hassam and Amar Gill.</p>
-</section>
-<section id="credits" class="level2">
-<h2 class="anchored" data-anchor-id="credits">Credits</h2>
-<p><code>latlonghelper</code> was created with <a href="https://cookiecutter.readthedocs.io/en/latest/"><code>cookiecutter</code></a> and the <code>py-pkgs-cookiecutter</code> <a href="https://github.com/py-pkgs/py-pkgs-cookiecutter">template</a>.</p>
+<section id="examples" class="level2 doc-section doc-section-examples">
+<h2 class="doc-section doc-section-examples anchored" data-anchor-id="examples">Examples</h2>
+<div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> lat_long_distance(<span class="fl">40.7128</span>, <span class="op">-</span><span class="fl">74.0060</span>, <span class="fl">34.0522</span>, <span class="op">-</span><span class="fl">118.2437</span>)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fl">3935.75</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 
 </section>
