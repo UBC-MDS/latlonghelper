@@ -2,7 +2,7 @@
 
 All notable changes to this project will be documented in this file.
 
-The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](),
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning]().
 
 ## [0.0.4] - (2026-02-02) - Milestone 4 - Final Submission
 
@@ -15,9 +15,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 ### Changed
 - Refactored the public API to follow snake_case naming conventions for all functions and tests.
 - Renamed functions to follow snake_case conventions:
- - LatLongBinning → lat_long_binning
- - LatLongDistance → lat_long_distance
- - PlotBinnedLatLong → plot_binned_lat_long- Updated and regenerated reference documentation to reflect API changes.
+    - LatLongBinning → lat_long_binning
+    - LatLongDistance → lat_long_distance
+    - PlotBinnedLatLong → plot_binned_lat_long- Updated and regenerated reference documentation to reflect API changes.
 - Updated the README with clearer usage examples and documentation links.
 - Updated pyproject.toml to reflect project configuration changes.
 
