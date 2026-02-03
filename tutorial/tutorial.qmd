@@ -21,9 +21,9 @@ This tutorial demonstrates how to use the three functions provided by **LatLongH
 ## Import functions
 
 ```{python}
-from latlonghelper.lat_long_binning import lat_long_binning
-from latlonghelper.lat_long_distance import lat_long_distance
-from latlonghelper.plot_binned_lat_long import plot_binned_lat_long
+from latlonghelper import lat_long_binning
+from latlonghelper import lat_long_distance
+from latlonghelper import plot_binned_lat_long
 ```
 
 ## Sample dataset (Vancouver / UBC)

@@ -129,7 +129,27 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#changelog" id="toc-changelog" class="nav-link active" data-scroll-target="#changelog">Changelog</a>
   <ul class="collapse">
-  <li><a href="#v0.1.0-05012026" id="toc-v0.1.0-05012026" class="nav-link" data-scroll-target="#v0.1.0-05012026">v0.1.0 (05/01/2026)</a></li>
+  <li><a href="#milestone-4---final-submission" id="toc-milestone-4---final-submission" class="nav-link" data-scroll-target="#milestone-4---final-submission">[0.0.4] - (2026-02-02) - Milestone 4 - Final Submission</a>
+  <ul class="collapse">
+  <li><a href="#added" id="toc-added" class="nav-link" data-scroll-target="#added">Added</a></li>
+  <li><a href="#changed" id="toc-changed" class="nav-link" data-scroll-target="#changed">Changed</a></li>
+  <li><a href="#improved" id="toc-improved" class="nav-link" data-scroll-target="#improved">Improved</a></li>
+  </ul></li>
+  <li><a href="#milestone-3" id="toc-milestone-3" class="nav-link" data-scroll-target="#milestone-3">[0.0.3] - (2026-01-25) - Milestone 3</a>
+  <ul class="collapse">
+  <li><a href="#added-1" id="toc-added-1" class="nav-link" data-scroll-target="#added-1">Added</a></li>
+  <li><a href="#changed-1" id="toc-changed-1" class="nav-link" data-scroll-target="#changed-1">Changed</a></li>
+  </ul></li>
+  <li><a href="#milestone-2" id="toc-milestone-2" class="nav-link" data-scroll-target="#milestone-2">[0.0.2] - (2026-01-17) - Milestone 2</a>
+  <ul class="collapse">
+  <li><a href="#added-2" id="toc-added-2" class="nav-link" data-scroll-target="#added-2">Added</a></li>
+  <li><a href="#changed-2" id="toc-changed-2" class="nav-link" data-scroll-target="#changed-2">Changed</a></li>
+  <li><a href="#fixed" id="toc-fixed" class="nav-link" data-scroll-target="#fixed">Fixed</a></li>
+  </ul></li>
+  <li><a href="#milestone-1" id="toc-milestone-1" class="nav-link" data-scroll-target="#milestone-1">[0.0.1] - (2026-01-10) - Milestone 1</a>
+  <ul class="collapse">
+  <li><a href="#added-3" id="toc-added-3" class="nav-link" data-scroll-target="#added-3">Added</a></li>
+  </ul></li>
   </ul></li>
   </ul>
 </nav>
@@ -142,14 +162,101 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="changelog" class="level1">
 <h1>Changelog</h1>
-<!--next-version-placeholder-->
-<section id="v0.1.0-05012026" class="level2">
-<h2 class="anchored" data-anchor-id="v0.1.0-05012026">v0.1.0 (05/01/2026)</h2>
+<p>All notable changes to this project will be documented in this file.</p>
+<p>The format is based on <a href="https://keepachangelog.com/en/1.0.0/">Keep a Changelog</a>, and this project adheres to <a href="">Semantic Versioning</a>.</p>
+<section id="milestone-4---final-submission" class="level2">
+<h2 class="anchored" data-anchor-id="milestone-4---final-submission">[0.0.4] - (2026-02-02) - Milestone 4 - Final Submission</h2>
+<section id="added" class="level3">
+<h3 class="anchored" data-anchor-id="added">Added</h3>
 <ul>
-<li>First release of <code>latlonghelper</code>!</li>
+<li>Introduced a comprehensive project tutorial written in Quarto, including worked examples and updated figures.</li>
+<li>Added a project retrospective page and integrated it into the documentation site.</li>
+<li>Added docstrings to all test files.</li>
+<li>Added inline code comments to the plotting script to improve readability.</li>
+</ul>
+</section>
+<section id="changed" class="level3">
+<h3 class="anchored" data-anchor-id="changed">Changed</h3>
+<ul>
+<li>Refactored the public API to follow snake_case naming conventions for all functions and tests.</li>
+<li>Renamed functions to follow snake_case conventions:
+<ul>
+<li>LatLongBinning → lat_long_binning</li>
+<li>LatLongDistance → lat_long_distance</li>
+<li>PlotBinnedLatLong → plot_binned_lat_long- Updated and regenerated reference documentation to reflect API changes.</li>
+</ul></li>
+<li>Updated the README with clearer usage examples and documentation links.</li>
+<li>Updated pyproject.toml to reflect project configuration changes.</li>
+</ul>
+</section>
+<section id="improved" class="level3">
+<h3 class="anchored" data-anchor-id="improved">Improved</h3>
+<ul>
+<li>Expanded and adjusted the test suite to achieve 100% test coverage.</li>
+</ul>
+</section>
+</section>
+<section id="milestone-3" class="level2">
+<h2 class="anchored" data-anchor-id="milestone-3">[0.0.3] - (2026-01-25) - Milestone 3</h2>
+<section id="added-1" class="level3">
+<h3 class="anchored" data-anchor-id="added-1">Added</h3>
+<ul>
+<li>Introduced package versioning and release management.</li>
+<li>Added GitHub Actions workflows for testing and building.</li>
+<li>Enabled automated testing across multiple Python versions.</li>
+<li>Added deployment workflows for publishing to TestPyPI.</li>
+<li>Created and published a Quarto documentation site.</li>
+</ul>
+</section>
+<section id="changed-1" class="level3">
+<h3 class="anchored" data-anchor-id="changed-1">Changed</h3>
+<ul>
+<li>Improved documentation structure and organization.</li>
+<li>Updated docstrings to include clearer error handling and usage descriptions.</li>
+<li>Refined deployment and CI configuration for reliability.</li>
+</ul>
+</section>
+</section>
+<section id="milestone-2" class="level2">
+<h2 class="anchored" data-anchor-id="milestone-2">[0.0.2] - (2026-01-17) - Milestone 2</h2>
+<section id="added-2" class="level3">
+<h3 class="anchored" data-anchor-id="added-2">Added</h3>
+<ul>
+<li>Completed and tested the PlotBinnedLatLong functionality.</li>
+<li>Added configurable bin width and height parameters.</li>
+<li>Expanded unit test coverage for core functionality.</li>
+</ul>
+</section>
+<section id="changed-2" class="level3">
+<h3 class="anchored" data-anchor-id="changed-2">Changed</h3>
+<ul>
+<li>Improved API consistency through refactoring and function renaming.</li>
+<li>Clarified and expanded project dependencies.</li>
+<li>Enhanced README documentation with setup and testing instructions.</li>
+</ul>
+</section>
+<section id="fixed" class="level3">
+<h3 class="anchored" data-anchor-id="fixed">Fixed</h3>
+<ul>
+<li>Removed Python cache files and unnecessary artifacts from version control.</li>
+<li>Cleaned up repository structure and internal comments.</li>
+</ul>
+</section>
+</section>
+<section id="milestone-1" class="level2">
+<h2 class="anchored" data-anchor-id="milestone-1">[0.0.1] - (2026-01-10) - Milestone 1</h2>
+<section id="added-3" class="level3">
+<h3 class="anchored" data-anchor-id="added-3">Added</h3>
+<ul>
+<li>Implemented core geospatial functionality, including LatLongDistance, LatLongBinning, PlotBinnedLatLong.</li>
+<li>Added foundational binning logic for latitude–longitude data.</li>
+<li>Established the initial project structure and package organization.</li>
+<li>Created initial documentation, including README and usage examples.</li>
+<li>Applied open-source licensing.</li>
 </ul>
 
 
+</section>
 </section>
 </section>
 
