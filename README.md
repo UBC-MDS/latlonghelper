@@ -94,13 +94,27 @@ at:
 -   Python 3.8+
 -   `pip`
 
-### Install from source (recommended)
 
-Clone the repository and install the package in editable mode:
+## Install (for users)
+
+1. To install this package, navigate to your preferred environment.
+2. Run the following command in your terminal.
+
+```bash
+pip install -i https://test.pypi.org/simple/ latlonghelper
+```
+The TestPyPI home page can be viewed [here](https://test.pypi.org/project/latlonghelper/) and the source distribution
+can be downloaded [here](https://test.pypi.org/project/latlonghelper/#files). 
+
+## Development installation (for contributors)
 
 ``` bash
-git clone https://github.com/UBC-MDS/latlonghelper
-cd latlonghelper
+pip install -e .
+```
+## Install with development dependencies
+
+``` bash
+pip install -e ".[dev]"
 ```
 
 ### Create a conda environment
@@ -111,27 +125,19 @@ using:
 ``` bash
 conda env create -f environment.yml
 conda activate latlonghelper-env
-pip install -e .
 ```
 
 ## To run the tests
 
-You can run the tests for this package using `pytest`. First, install
-the testing dependencies:
+You can run the tests for this package using `pytest`. 
 
-``` bash
-pip install -e ".[dev]"
-```
-
-Then, run the tests with:
-
-```         
+``` bash     
 pytest
 ```
 
 To view the test coverage, run the following command:
 
-```         
+``` bash
 pytest --cov=src/latlonghelper
 ```
 
