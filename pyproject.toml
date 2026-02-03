@@ -11,7 +11,9 @@ requires-python = ">=3.8"
 license = "MIT"
 keywords = []
 authors = [
-  { name = "agill59", email = "amargill2627@gmail.com" },
+  { name = "Paul Raadnui" },
+  { name = "Ashifa Hassam" },
+  { name = "Amar Gill" },
 ]
 classifiers = [
   "Development Status :: 4 - Beta",
@@ -23,6 +25,7 @@ classifiers = [
   "Programming Language :: Python :: 3.12",
   "Programming Language :: Python :: Implementation :: CPython",
   "Programming Language :: Python :: Implementation :: PyPy",
+  "License :: OSI Approved :: MIT License",
 ]
 dependencies = [
   "pandas",
@@ -31,9 +34,9 @@ dependencies = [
 ]
 
 [project.urls]
-Documentation = "https://github.com/agill59/latlonghelper#readme"
-Issues = "https://github.com/agill59/latlonghelper/issues"
-Source = "https://github.com/agill59/latlonghelper"
+Documentation = "https://UBC-MDS.github.io/latlonghelper/"
+Source = "https://github.com/UBC-MDS/latlonghelper"
+Issues = "https://github.com/UBC-MDS/latlonghelper/issues"
 
 [tool.hatch.version]
 source = "vcs"
@@ -72,5 +75,8 @@ exclude_lines = [
 dev = [
   "pytest",
   "pytest-cov",
-  "hatch-vcs"
+  "hatch-vcs",
+]
+docs = [
+  "quartodoc",
 ]
